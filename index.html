@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        0
+    </div>
+    <button class="btn" onclick="incriment()"> incriment</button>
+    <button class="btn" onclick="dicirement()"> diciremnt</button>
+    <button class="btn" onclick="reset()"> reset</button>
+    
+  <script>
+        let a = 0;
+
+function updateDisplay() {
+    document.querySelector('.wrapper').textContent = a;
+}
+
+function incriment() {
+    a++;
+    updateDisplay();
+}
+
+function dicirement() {
+    if(a>=1){
+        a--;
+    }
+    else{
+        alert("NUMBER ARE NOT ACCPETED IN -(MINIUS)")
+    }
+    updateDisplay();
+}
+
+function reset() {
+    a = 0;
+    updateDisplay();
+}
+</script>
+
+
+</body>
+</html>
